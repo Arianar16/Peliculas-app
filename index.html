@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies App</title>
+</head>
+
+<body>
+
+<header>
+
+    <nav>
+
+        <div class="logo">  Movies App </div>
+
+        <ul>
+            <li>
+                <a href="#inicio" class="activo"> Inicio </a>
+            </li>
+
+            <li>
+                <a href="#peliculas"> Películas</a>
+            </li>
+
+            <li>
+                <a href="favoritos.html">Favoritos</a>
+            </li>
+        </ul>
+
+    </nav>
+
+</header>
+
+
+<section class="hero" id="inicio">
+
+    <h1>
+        Descubrí tu próxima <br>
+        película favorita
+    </h1>
+
+    <p>Explorá, buscá y disfrutá los mejores títulos. </p>
+
+    <div class="busqueda">
+      <input type="text" id="buscador" placeholder="Buscar película...">
+
+      <button id="buscar"> Buscar </button>
+
+    </div>
+
+  <div class="filtros">
+
+    <div class="filtro">
+
+        <label>Categoría</label>
+
+        <select id="categoria">
+            <option value="0">Todas</option>
+            <option value="28">Acción</option>
+            <option value="35">Comedia</option>
+            <option value="18">Drama</option>
+            <option value="27">Terror</option>
+            <option value="878">Ciencia ficción</option>
+        </select>
+
+    </div>
+
+    <div class="filtro">
+
+        <label>Ordenar</label>
+
+        <select id="orden">
+            <option value="default">Sin ordenar</option>
+            <option value="recientes">Más recientes</option>
+            <option value="antiguas">Más antiguas</option>
+        </select>
+
+    </div>
+
+  </div>
+
+  </div>
+
+</section>
+
+
+<section class="peliculas" id="peliculas"></section>
+
+<script type="module" src="/src/js/main.js">
+
+</script>
+
+</body>
+
+</html>
