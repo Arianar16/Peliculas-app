@@ -1,6 +1,4 @@
-const API_KEY = "98d560bcc91cceed30e446a8da9b0a06";
-
-
+const API_KEY = import.meta.env.VITE_API_KEY;
 
 const URL_POPULARES =`https://api.themoviedb.org/3/movie/top_rated?api_key=${API_KEY}&language=es-ES&page=1`;
 
